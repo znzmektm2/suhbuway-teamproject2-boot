@@ -7,7 +7,8 @@ import org.springframework.data.repository.CrudRepository;
 
 import project.suhbuway.mvc.dto.NewsBoard;
 
-public interface NewsBoardRepository extends CrudRepository<NewsBoard, Long> {
+public interface NewsBoardRepository extends CrudRepository<NewsBoard, Integer> {
 	List<NewsBoard> findByTitleContaining(String title);
-	Page<NewsBoard> findByNewsIdGreaterThanOrderByNewsIdDesc(Long newsId, Pageable paging);
+	NewsBoard findByNewsId(Integer newsId);
+	Page<NewsBoard> findByNewsIdGreaterThanOrderByNewsIdDesc(Integer newsId, Pageable paging);
 }

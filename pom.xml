@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.suhbuway</groupId>
 	<artifactId>suhbuway-teamproject2-boot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version> 
 	<packaging>war</packaging>
 	<name>suhbuway-teamproject2-boot</name>
 	<description>Demo project for Spring Boot</description>
@@ -67,6 +67,13 @@
 			<artifactId>ojdbc6</artifactId>
 			<version>11.2.0.3</version>
 			<scope>compile</scope>
+		</dependency>
+		
+		<!-- 크롤링 -->
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.10.3</version>
 		</dependency>
 
 	</dependencies>

@@ -18,9 +18,7 @@ public class SuhbuwayTeamproject2BootApplicationTests {
 	
 	@Test
 	public void insert() {
-	   for(Long i=1L; i<= 20 ; i++) {
-		   rep.save(new NewsBoard(i, "제목"+i, "날짜 - "+i, "content"+i, "imgUrl"+i, false));
-	   }
+		//rep.save(new NewsBoard(i, "제목"+i, "날짜 - "+i, "content"+i, "imgUrl"+i, false));
 	}
 
 }
