@@ -19,6 +19,6 @@ public class CrollingScheduler {
 	
 	@Scheduled(fixedRate = 1000 * 60 * 60 * 24)
 	public void scheduleCrolling() {
-    	noticeCount = service.updateNewsBoard();
+    	//noticeCount = service.updateNewsBoard();
    }
 }
